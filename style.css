@@ -1,0 +1,145 @@
+* {
+    margin: 0px;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.store {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    border-radius: 10px;
+    margin: 2rem 2rem 1rem;
+}
+
+#logo {
+    height: 5rem;
+    padding: 0.5rem;
+}
+
+#text {
+    height: 3rem;
+    padding: 0.5rem;
+}
+
+nav {
+    background-color: beige;
+    margin: 1rem 2rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+ul li {
+    padding: 1rem;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+article img {
+    height: 10rem;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: "banner banner banner" "services appointment history";
+    gap: 1rem;
+    margin: 2rem 2rem;
+}
+
+.container-first {
+    grid-area: banner;
+    background-image: url(./assets/banner.jpeg);
+    height: 10rem;
+    border-radius: 10px;
+    color: white;
+    opacity: 0.8;
+    border: 1px solid black;
+}
+
+.container-first:hover {
+    opacity: 1;
+}
+
+.container-first h2 {
+    margin: 1rem;
+    font-size: 2rem;
+}
+
+.container-first p {
+    margin: 2rem 1rem;
+}
+
+.item {
+    background-color: beige;
+    border-radius: 10px;
+    padding: 1rem;
+    opacity: 0.8;
+    border: 1px solid black;
+}
+
+.item:hover {
+    opacity: 1;
+}
+
+.item img {
+    margin: 1rem 0;
+}
+
+.item p {
+    margin: 1rem 0;
+}
+
+.item a {
+    font-size: 1rem;
+}
+
+.services {
+    grid-area: services;
+}
+
+.appointment {
+    grid-area: appointment;
+}
+
+.history {
+    grid-area: history;
+}
+
+hr {
+    margin: 1rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+
+footer img {
+    height: 1.2rem;
+    padding: 1rem;
+}
